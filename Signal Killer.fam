@@ -1,0 +1,19 @@
+App(
+    appid=signalkiller,
+    name=SignalKiller,
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point=signalkiller_app,
+    cdefines=["APP_SIGNAL_KILLER"],
+    requires=[
+        "gui",
+        "subghz",
+        "notification",
+    ],
+    sources=[
+        "signalkiller.c"
+    ],
+    fap_category=Sub-GHz,
+    fap_icon="icon.png",
+    fap_description="SignalKiller v2.4 - Jammer",
+    stack_size=4096
+)
